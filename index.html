@@ -125,7 +125,10 @@
     const row = cell.parentNode;
     const cdx = [...row.children].indexOf(cell);
     const rdx = [...row.parentNode.children].indexOf(row);
-
+    data[rdx][cdx].classList.toggle("red");
+    cell.addEventListener('click', (ev) => {
+      data[rdx][cdx].classList.add("red"); // not working
+    })
 
     render();
   });
