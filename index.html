@@ -20,7 +20,25 @@
   <title>Acme Pixels</title>
 </head>
 <body>
+  <h1>Acme Pixels</h1>
+  <div id="container">
+    <div id="controls">
+       <button></button>
+       <button></button>
+       <button></button>
+       <button></button>
+       <div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+       </div>
+      </div>
+      <div>
     <div id="grid"></div>
+    </div>
+  </div>
 <script>
 
 
@@ -60,6 +78,7 @@
     const cdx = [...row.children].indexOf(cell);
     const rdx = [...row.parentNode.children].indexOf(row);
     data[rdx][cdx]++;
+
     render();
   });
 
